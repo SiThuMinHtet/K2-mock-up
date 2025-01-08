@@ -1,0 +1,14 @@
+@import "./variable.scss";
+
+.input_container {
+  background-color: $primary_color;
+  border-radius: $border_radius;
+  border: 1px solid $border_color;
+  height: 400px;
+
+  input {
+    border: 1px solid $border_color;
+    padding: $spacing-sm;
+    border-radius: $border_radius;
+  }
+}
