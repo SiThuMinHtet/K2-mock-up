@@ -86,4 +86,12 @@ input {
   border: 1px solid #fbf7f4;
   padding: 8px;
   border-radius: 8px;
+}
+
+.btn {
+  background-color: #ffc911;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
 }/*# sourceMappingURL=utility.css.map */

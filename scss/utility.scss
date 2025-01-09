@@ -12,3 +12,12 @@
     border-radius: $border_radius;
   }
 }
+
+.btn{
+  background-color: $accent_color;
+  border: none;
+  border-radius:10px;
+  padding:$button_padding;
+  cursor: pointer;
+  
+}
