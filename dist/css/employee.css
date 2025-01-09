@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+.dashboard {
+  display: flex;
+}
+
+.sidebar {
+  width: 60px;
+  background-color: #ffd700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+.sidebar .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar .menu .menu-item {
+  width: 40px;
+  height: 40px;
+  margin: 10px 0;
+  background-color: #202020;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.sidebar .menu .menu-item.active {
+  background-color: #ccac00;
+}
+.sidebar .menu .menu-item .icon {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #3c3c3c;
+}
+.navbar .navbar-left h1 {
+  margin: 0;
+  font-size: 20px;
+}
+.navbar .navbar-right {
+  display: flex;
+  align-items: center;
+}
+.navbar .navbar-right .icon-button {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  background-color: #202020;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.navbar .navbar-right .profile {
+  background-color: #202020;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-grow: 1;
+  padding: 20px;
+}
+.content-wrapper .search-panel {
+  width: 25%;
+  background-color: #3c3c3c;
+  padding: 20px;
+  border-radius: 8px;
+}
+.content-wrapper .search-panel h3 {
+  margin: 10px 0;
+}
+.content-wrapper .search-panel input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #202020;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+}
+.content-wrapper .listing {
+  flex-grow: 1;
+  margin-left: 20px;
+  background-color: #3c3c3c;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.content-wrapper .listing .listing-header {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: #232323;
+  padding: 10px;
+  font-weight: bold;
+}
+.content-wrapper .listing .listing-body .row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 10px;
+  border-bottom: 1px solid #464646;
+}
+.content-wrapper .listing .listing-body .row:last-child {
+  border-bottom: none;
+}/*# sourceMappingURL=employee.css.map */

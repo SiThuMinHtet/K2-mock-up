@@ -1,0 +1,129 @@
+// SCSS for Dashboard Design
+@import "./variable.scss";
+
+// Global Styles
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: $bg_color;
+  color: $text-color;
+}
+
+.dashboard {
+  width: 100%;
+  display: flex;
+
+  .main_content {
+    width: 100%;
+  }
+}
+
+// Content Wrapper
+.content_wrapper {
+  height: 86vh;
+  display: flex;
+  flex-grow: 1;
+  background-color: $primary_color;
+  margin: 20px;
+  padding: 20px;
+  border-radius: $border_radius;
+  gap: 30px;
+
+  .search_panel {
+    width: 25%;
+    div {
+      background-color: $btn_grey;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    button {
+      padding: $button_padding;
+      background-color: red;
+      border-radius: $border_radius;
+    }
+
+    h3 {
+      margin: 10px 0;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      background-color: $secondary_color;
+      border: none;
+      border-radius: 5px;
+      color: $text-color;
+    }
+  }
+
+  .listing {
+    flex-grow: 1;
+    // margin-left: 20px;
+    background-color: $secondary_color;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .list_btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      button {
+        color: $text_color;
+        padding: $button_padding;
+        border-radius: $border_radius;
+
+        &:nth-child(1) {
+          background-color: $btn_black;
+        }
+
+        &:nth-child(2) {
+          background-color: $btn_grey;
+        }
+      }
+    }
+
+    .listing_header {
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      color: $primary_color;
+      border-radius: $border_radius;
+      background-color: $accent_color;
+      padding: 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .listing_body {
+      .row {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        padding: 10px;
+        border-bottom: 1px solid lighten($secondary_color, 10%);
+        text-align: center;
+        align-items: center;
+
+        span {
+          &:nth-child(1) {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+          }
+        }
+
+        span img {
+          width: 44px;
+          height: 44px;
+          object-fit: cover;
+        }
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
