@@ -31,15 +31,49 @@ body {
 
   .search_panel {
     width: 25%;
-    div {
+
+    .add_employee_btn {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .search_inner {
       background-color: $btn_grey;
       padding: 20px;
       border-radius: 8px;
+      margin-top: 10px;
+      height: 90%;
+    }
+
+    .search_input_container {
+      background-color: $primary_color;
+      border-radius: $border_radius;
+      padding: 10px;
+      height: 90%;
+
+      label {
+        padding-left: 30px;
+      }
+
+      p {
+        text-align: center;
+        font-size: 14px;
+      }
+
+      .search_input {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        input {
+          border: 1px solid $border_color;
+        }
+      }
     }
 
     button {
       padding: $button_padding;
-      background-color: red;
+      background-color: $text_color;
       border-radius: $border_radius;
     }
 

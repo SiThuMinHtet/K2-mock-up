@@ -104,14 +104,41 @@ body {
 .content_wrapper .search_panel {
   width: 25%;
 }
-.content_wrapper .search_panel div {
+.content_wrapper .search_panel .add_employee_btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.content_wrapper .search_panel .search_inner {
   background-color: #3e3a3e;
   padding: 20px;
   border-radius: 8px;
+  margin-top: 10px;
+  height: 90%;
+}
+.content_wrapper .search_panel .search_input_container {
+  background-color: #221e22;
+  border-radius: 8px;
+  padding: 10px;
+  height: 90%;
+}
+.content_wrapper .search_panel .search_input_container label {
+  padding-left: 30px;
+}
+.content_wrapper .search_panel .search_input_container p {
+  text-align: center;
+  font-size: 14px;
+}
+.content_wrapper .search_panel .search_input_container .search_input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.content_wrapper .search_panel .search_input_container .search_input input {
+  border: 1px solid #fbf7f4;
 }
 .content_wrapper .search_panel button {
   padding: 10px 25px;
-  background-color: red;
+  background-color: #fbf7f4;
   border-radius: 8px;
 }
 .content_wrapper .search_panel h3 {

@@ -47,8 +47,6 @@
 
             <!-- Listing and Search Components -->
             <div class="content_wrapper">
-
-
                 <!-- Listing Component -->
                 <div class="listing">
                     <div class="list_btn">
@@ -135,16 +133,43 @@
 
                 <!-- Search Component -->
                 <div class="search_panel">
-                    <button><i class="fa-solid fa-circle-plus"></i>Add New Employee</button>
-                    <div>
-                        <h3>Keyword Search</h3>
-                        <input type="text" placeholder="Search...">
-                        <h3>Please set the filtering conditions</h3>
-                        <input type="text" placeholder="Org Name/Team">
-                        <input type="text" placeholder="Org Name/Team">
-                        <input type="text" placeholder="Org Name/Team">
+                    <div class="add_employee_btn">
+                        <button><i class="fa-solid fa-circle-plus"></i>Add New Employee</button>
                     </div>
 
+                    <div class="search_inner">
+                        <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+                        <input type="text" placeholder="Keyword Search...">
+
+                        <div class="search_input_container">
+                            <p><i class="fa-solid fa-filter"></i> Please set the filtering conditions</p>
+                            <div>
+                                <label for="">Team</label>
+                                <div class="search_input">
+                                    <i class="fa-solid fa-users"></i>
+                                    <input type="text" placeholder="Org Name/Team">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="">Name</label>
+                                <div class="search_input">
+                                    <i class="fa-solid fa-users"></i>
+                                    <input type="text" placeholder="Org Name/Team">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="">Email</label>
+                                <div class="search_input">
+                                    <i class="fa-solid fa-users"></i>
+                                    <input type="text" placeholder="Org Name/Team">
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
