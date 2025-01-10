@@ -1,0 +1,44 @@
+@import "./variable.scss";
+
+// Sidebar Component
+.sidebar {
+  width: 60px;
+  background-color: $accent_color;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .menu_item {
+      width: 40px;
+      height: 40px;
+      margin: 10px 0;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      &.active {
+        background-color: darken($accent_color, 10%);
+      }
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        background-color: $text-color;
+        border-radius: 50%;
+      }
+
+      i {
+        color: $primary_color;
+      }
+    }
+  }
+}

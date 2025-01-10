@@ -1,0 +1,41 @@
+@import "./variable.scss";
+
+// Navbar Component
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: $primary_color;
+
+  .navbar_left {
+    h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+  }
+
+  .navbar_right {
+    display: flex;
+    align-items: center;
+
+    .icon_button {
+      width: 30px;
+      height: 30px;
+      margin: 0 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      i {
+        color: $text_color;
+      }
+    }
+
+    .profile {
+      padding: 5px 10px;
+      border-radius: $border_radius;
+      border: 1px solid $border_color;
+    }
+  }
+}
